@@ -8,7 +8,7 @@ namespace Microsoft.Extensions.Caching.Redis
 {
     public class RedisCache : IDistributedCache, IDisposable
     {
-        // KEYS[1] = = key
+        // KEYS[1] = = key 
         // ARGV[1] = absolute-expiration - ticks as long (-1 for none)
         // ARGV[2] = sliding-expiration - ticks as long (-1 for none)
         // ARGV[3] = relative-expiration (long, in seconds, -1 for none) - Min(absolute-expiration - Now, sliding-expiration)
